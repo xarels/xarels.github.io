@@ -22,8 +22,18 @@ function Blob(x,y,r) {
 		}
 	}
 
+	this.intersects = function () {
+		var distance = p5.Vector.dist(this.pos,other.pos);
+		if (distance < this.r + other.r){
+			return true;
+		} else {
+			return false;
+		}
+	}
+
      this.show = function() {
-        fill(255);
+		stroke(255)
+        fill(255,100);
         ellipse(this.pos.x, this.pos.y, this.r*2, this.r*2);
      }
 }

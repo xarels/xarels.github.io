@@ -10,7 +10,13 @@ function setup() {
 	for (var i = 0; i < 200; i++) { 
 		var x = random(-width, width)
 		var y = random(-height, height)
-		monsters[i] = new Blob(x,y,16); 
+		monsters[i] = new Blob(x,y,random(50)); 
+		
+		//var distance = dist(current.r, other.r);
+		//x = random(-width, width)
+		//y = random(-height, height)
+		//monsters[i] = new Blob(x,y,16); 
+	
 	}
 }
 
@@ -27,8 +33,24 @@ function draw() {
 		monsters[i].show();
 		if(player.eats(monsters[i])){
 			monsters.splice(i,1);
+			//monsters.push(new monster(random(-width, width),random(-height, height), player.r * 2));
 		}
+		//for (var j = 0;  j < monsters.length; j++) {
+
+		//	if (i == j || (i -1) == j ) {
+					continue;
+		//	}
+
+		//	if (monsters[i].intersects(monsters[j])) {
+				//monsters[i].show();
+		//	}
+		//}
 	}
+
+		//var distance = p5.Vector.dist(this.pos,o
+
+
+
 
 	player.show();
 	player.update();
