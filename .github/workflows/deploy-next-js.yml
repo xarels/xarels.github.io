@@ -24,8 +24,6 @@ jobs:
       - name: Build my app
         run: npm run build && touch ./out/.nojekyll
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: portfolio-next-js
           FOLDER: out
