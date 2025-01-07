@@ -1,5 +1,5 @@
 
-.navbar {
+nav {
     background-color: #333;
     display: flex;
     justify-content: flex-start;
@@ -11,38 +11,78 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.navbar-link {
+nav a {
     display: inline-flex;
     align-items: center;
     color: #f2f2f2;
     text-align: center;
     padding: 0.875rem 1rem;
     text-decoration: none;
-    font-size: 1.0625rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
     transition: all 0.3s ease;
     border-radius: 4px;
     margin: 0 0.25rem;
+    transition: all 0.3s ease;
 }
 
-.navbar-link:hover,
-.navbar-link:focus {
-    background-color: #ddd;
+nav a:hover,
+nav a:focus {
+    background-color: #ff6347;
     color: black;
     outline: none;
+    transition: color 0.3s ease;
 }
 
-.navbar-link.active {
-    background-color: #4CAF50;
+nav a:hover {
+    transform: translateY(-2px);
+}
+
+nav a:active {
+    background-color: #ff6347;
     color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: #ff6347; /* Tomato color */
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
+    nav {
         flex-direction: column;
         padding: 0.5rem;
     }
 
-    .navbar-link {
+    nav a {
         width: 100%;
         margin: 0.25rem 0;
     }

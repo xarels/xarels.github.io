@@ -12,10 +12,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "[Your Name] - Graphic Designer Portfolio",
+  charset:"utf-8" ,
+  viewport: "width=device-width, initial-scale=1",
+  language: "en",
+  url: "https://www.yourwebsite.com", /* Change this */
+  type: "portfolio",
+  site_name: "[Your Name] - Graphic Designer Portfolio", /* Change this */
+  title: "[Your Name] - Graphic Designer Portfolio",  /* Change this */
   description: "Professional portfolio of [Your Name] - Graphic Designer specializing in branding, portraits, and poster design",
   keywords: "graphic design, portfolio, branding, portraits, posters",
-  author: "[P.S.]",
+  author: "[P.S.]",  /* Change this */
+  canonical: "https://www.yourwebsite.com",  /* Change this */
+  publication_date: "2022-01-01",
 };
 
 export default function RootLayout({ children }) {
