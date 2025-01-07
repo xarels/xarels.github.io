@@ -6,7 +6,7 @@ import './styles/Navbar_module.css';
 export const Navbar = () => {
   return (
     <nav clasname= "navbar">
-      <a href="#">
+      <a href="#" className='logo'>
         <Image src="/logo.svg" alt="Logo" width={50} height={50} />
       </a>
       <ul>
