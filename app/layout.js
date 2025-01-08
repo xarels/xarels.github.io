@@ -11,9 +11,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata = {
   charset:"utf-8" ,
-  viewport: "width=device-width, initial-scale=1",
   language: "en",
   url: "https://www.yourwebsite.com", /* Change this */
   type: "portfolio",
