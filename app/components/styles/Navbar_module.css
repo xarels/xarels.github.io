@@ -131,7 +131,7 @@ nav .navbar-links li:hover {
         flex-direction: column;
         position: absolute;
         background-color: #333;
-        top: 50;
+        top: 50px;
         right: 10px;
         width: 200px;
         padding: 10px;
