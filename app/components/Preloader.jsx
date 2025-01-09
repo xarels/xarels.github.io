@@ -1,7 +1,7 @@
 'use client';
 import { motion } from "framer-motion";
 import React from "react";
-
+import "./styles/Preloader_module.css";
 
 export default function Preloader ({onComplete})  {
     const [isAnimating, setIsAnimating] = React.useState(true);

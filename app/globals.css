@@ -1,8 +1,3 @@
-@import "./components/styles/Footer_module.css";
-@import "./components/styles/Navbar_module.css";
-@import "./components/styles/Hero_module.css";
-@import "./components/styles/Preloader_module.css";
-@import "./components/styles/Contact_module.css";
 
 :root {
   --background: #ffffff;

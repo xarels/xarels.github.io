@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Preloader from "./components/Preloader";
-
+import "./components/styles/Hero_module.css";
 
 export default function Hero() {
 
