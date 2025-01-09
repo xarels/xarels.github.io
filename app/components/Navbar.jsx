@@ -20,7 +20,7 @@ export const Navbar = () => {
       <ul className={`navbar-links ${menuOpen ? 'show' : ''}`}>
       <li><a href="/" >Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#my-work">My Work</a></li>
+        <li><a href="#myWork">My Work</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
       </div>

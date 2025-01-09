@@ -1,0 +1,130 @@
+/* styles/ContactForm.module.css */
+.form-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin: 8px 0 4px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .input:focus,
+  .textarea:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+  }
+  
+  .textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #000; /* Match other buttons */
+    background: linear-gradient(135deg, #000, #333);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background: tomato; /* Tomato color */ /* Tomato color */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .success-message,
+  .error-message {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  
+  .error-message {
+    color: red;
+  }
+
+  @media  (max-width: 768px){
+  
+    .form-container {
+        padding: 20px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 12px;
+      }
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+        order: 2;
+    }
+
+
+
+    .label {
+        margin: 8px 0 4px;
+        font-size: 0.9rem;
+    }
+  
+    .input,
+    .textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+  
+    .button {
+        width: 100%;
+        padding: 12px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

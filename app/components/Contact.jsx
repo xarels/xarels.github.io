@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import "./styles/Contact_module.css";
+import ContactForm from './ContactForm';
 
 export const Contact = () => {
 
@@ -30,6 +31,8 @@ export const Contact = () => {
       <p><FontAwesomeIcon className="i" icon= {faPhone}/> (123) 456-7890</p>
       <p><FontAwesomeIcon className="i" icon= {faLocationDot}/> City, Country</p>
     </div>
+
+    <ContactForm />
 
     </div>
     </section>

@@ -1,44 +1,16 @@
 'use client';
+import React from 'react';
+import Hero from './components/Hero';
+import Main from './components/Main';
 
-import { useState } from "react";
-import { useRouter } from 'next/navigation';
-import Preloader from "./components/Preloader";
-import "./components/styles/Hero_module.css";
 
-export default function Hero() {
+export default function Home() {
 
-  const [isLoaded, setIsLoaded] = useState(false);
-  const handlePreloaderComplete = () => {
-    setIsLoaded(true);
-  };
-
-  const router = useRouter();
-  const handleCTAClick = () => {
-    router.push("/main");
-  };
+  const [showHero, setShowHero] = React.useState(true);
 
   return (
     <>
-    {!isLoaded && 
-    <Preloader onComplete={handlePreloaderComplete} />}
-
-
-    { isLoaded && 
-    (
-    <div className="hero">
-      <div className="hero-content">
-          <div className="hero-text">
-          <h1 className="title">Creative Vision, Exceptional Design</h1>
-          <p className="tagline">Hi, I'm <span className="highlight">[Your Name]</span>, transforming ideas into compelling visual experiences</p>
-          <div className="cta-buttons">
-          <button className="cta-button" onClick={handleCTAClick}>Get To Know Me</button>
-          <button className="cta-button" onClick={handleCTAClick}>View My Work</button>
-          <button className="cta-button" onClick={handleCTAClick}>Let's talk</button>
-          </div>
-        </div>
-      </div>
-    </div>
-)}
+      {showHero ? (<Hero onEnter = {() => setShowHero(false)} />) : (<Main />)} 
 
     </>
 
