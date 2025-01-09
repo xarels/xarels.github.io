@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <nav clasname= "navbar">
       <a href="" className='logo'>
-        <Image src="http://localhost:3000/logo.png" alt="Logo" width={100} height={100} />
+        <Image src="https://xarels.github.io//logo.png" alt="Logo" width={100} height={100} />
       </a>
       <ul>
       <li><a href="" >Home</a></li>
