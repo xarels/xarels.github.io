@@ -2,6 +2,7 @@
 @import "./components/styles/Navbar_module.css";
 @import "./components/styles/Hero_module.css";
 @import "./components/styles/Preloader_module.css";
+@import "./components/styles/Contact_module.css";
 
 :root {
   --background: #ffffff;
@@ -52,4 +53,44 @@ section {
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Touch device optimizations */
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-item:hover {
+      transform: translateY(-10px);
+  }
+}
+
+/* iOS-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  html, body {
+      height: -webkit-fill-available;
+  }
+}
+
+/* Platform-specific scrollbar styles */
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+      ::-webkit-scrollbar {
+          width: 8px;
+          background-color: var(--bg-color);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+          background-color: var(--secondary-color);
+          border-radius: 4px;
+      }
+  }
+}
+
+@media  (max-width: 768px){
+  /* Typography */
+  header h1 { font-size: 2em; }
+  header p { font-size: 1em; }
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 1.5em; }
+  header p { font-size: 0.9em; }
 }

@@ -82,8 +82,11 @@ nav ul li:hover {
         padding: 0.5rem;
     }
 
-    nav a {
-        width: 100%;
-        margin: 0.25rem 0;
+    nav ul {
+        flex-direction: column;
     }
+
+    nav ul li {
+        margin: 10px 0;
+}
 }

@@ -31,9 +31,9 @@ export default function Hero() {
           <h1 className="title">Creative Vision, Exceptional Design</h1>
           <p className="tagline">Hi, I'm <span className="highlight">[Your Name]</span>, transforming ideas into compelling visual experiences</p>
           <div className="cta-buttons">
-          <button className="cta" onClick={handleCTAClick}>Get To Know Me</button>
-          <button className="cta" onClick={handleCTAClick}>View My Work</button>
-          <button className="cta" onClick={handleCTAClick}>Let's talk</button>
+          <button className="cta-button" onClick={handleCTAClick}>Get To Know Me</button>
+          <button className="cta-button" onClick={handleCTAClick}>View My Work</button>
+          <button className="cta-button" onClick={handleCTAClick}>Let's talk</button>
           </div>
         </div>
       </div>
