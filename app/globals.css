@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "./components/styles/Footer_module.css";
+@import "./components/styles/Navbar_module.css";
+@import "./components/styles/Hero_module.css";
+@import "./components/styles/Preloader_module.css";
 
 :root {
   --background: #ffffff;
@@ -18,9 +19,37 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 20px;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

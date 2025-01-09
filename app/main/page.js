@@ -1,21 +1,18 @@
 'use client';
-import { motion } from "framer-motion";
+
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <motion.div 
-    className="main"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: 50 }}
-    transition={{ duration: 0.5, ease: "easeInOut" }}>
+    <div 
+    className="main" >
     
     <Navbar />
 
-    
 
 
-    </motion.div>
+    <Footer />
+    </div>
   );
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import './styles/Navbar_module.css';
 
 export const Navbar = () => {
   return (
@@ -15,10 +13,6 @@ export const Navbar = () => {
         <li><a href="#my-work">My Work</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-      <div>
-        <a href="#contact"> contact </a>
-      </div>
-
     </nav>
   )
 }
