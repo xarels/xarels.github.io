@@ -1,0 +1,78 @@
+.about-section {
+    background-color: #ffffff;
+    border-radius: 10px;;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    padding: 80px 20px;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.about-section .skills {
+    display: flex;
+    gap: 2rem;
+}
+
+.about-section .skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section .skills li {
+    background: #000000;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.about-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;;
+    padding: 20px;
+    
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+@media  (max-width: 768px){
+    .about-section .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-section .about-image img {
+        max-width: 90%;
+        margin-bottom: var(--space-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section .about-content {
+        padding: 20px;
+    }
+
+    .about-section .about-image img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,63 @@
+.portfolio-section {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.portfolio-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    padding: 12px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #000;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: tomato; /* Tomato color */
+    transform: translateY(-2px);
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.portfolio-section .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media  (max-width: 768px){
+    .portfolio-section #portfolio-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+ /* Portfolio Section */
+ .portfolio-section .filter-buttons button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    margin: 4px;
+}
+
+.portfolio-section #portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+}

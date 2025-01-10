@@ -17,6 +17,8 @@ export default function Home() {
         setScrolled(false);
       }
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll",handleScroll);
   }
 , []);
 
@@ -32,8 +34,6 @@ export default function Home() {
 
       <Footer />
       </div>
-
     </>
-
   );
 }

@@ -1,0 +1,25 @@
+[
+    {
+        "image": "./assets/branding1.jpg",
+        "title": "Project Title 1",
+        "description": "Brief description of the project."
+
+    },
+    {
+        "image": "./assets/branding2.png",
+        "title": "Project Title 2",
+        "description": "Brief description of the project."
+
+    },
+    {
+        "image": "./assets//poster1.jpg",
+        "title": "Project Title 3",
+        "description": "Brief description of the project."
+
+    },
+    {
+        "image": "./assets/poster2.jpg",
+        "title": "Project Title 3",
+        "description": "Brief description of the project."
+    }
+]

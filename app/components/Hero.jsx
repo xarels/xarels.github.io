@@ -26,7 +26,7 @@ export const Hero = () => {
               <p className="tagline">Hi, I'm <span className="highlight">[Your Name]</span>, transforming ideas into compelling visual experiences</p>
               <div className="cta-buttons">
               <button className="cta-button" onClick={() => document.getElementById('aboutMe').scrollIntoView()}>Get To Know Me</button>
-              <button className="cta-button" onClick={() => document.getElementById('myWork').scrollIntoView()}>View My Work</button>
+              <button className="cta-button" onClick={() => document.getElementById('portfolio').scrollIntoView()}>View My Work</button>
               <button className="cta-button" onClick={() => document.getElementById('contact').scrollIntoView()}>Let's talk</button>
               </div>
             </div>
