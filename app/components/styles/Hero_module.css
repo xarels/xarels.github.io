@@ -8,8 +8,8 @@
     display: grid;
     place-items: center;
     animation: backgroundShift 10s infinite alternate;
+    transition: transform 08s ease;;
 }
-
 
 .hero-content {
     display: flex;
