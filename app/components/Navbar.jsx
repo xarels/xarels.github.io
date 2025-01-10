@@ -1,6 +1,4 @@
-'use client';
 import React from 'react'
-import Image from 'next/image'
 import "./styles/Navbar_module.css";
 
 export const Navbar = () => {

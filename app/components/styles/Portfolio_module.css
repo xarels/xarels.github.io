@@ -39,7 +39,7 @@
 }
 
 @media  (max-width: 768px){
-    .portfolio-section #portfolio-items {
+    .portfolio-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 1rem;
@@ -55,7 +55,7 @@
     margin: 4px;
 }
 
-.portfolio-section #portfolio-items {
+ .portfolio-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;

@@ -5,15 +5,15 @@ import "./styles/Portfolio_module.css";
 export const MyWork = () => {
   return (
     <>
-    <section id="portfolio" class="portfolio-section hidden">
+    <section id="portfolio" className="portfolio-section hidden">
         <h2>My Work</h2>
-        <div class="filter-buttons">
-            <button data-filter="all" class="active">All</button>
+        <div className="filter-buttons">
+            <button data-filter="all" className="active">All</button>
             <button data-filter="branding">Branding</button>
             <button data-filter="portrait">Portrait</button>
             <button data-filter="poster">Poster</button>
         </div>
-        <PortfolioItems />
+          <PortfolioItems />
     </section>
     </>
   )
