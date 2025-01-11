@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import Preloader from "./Preloader";
 import "./styles/Hero_module.css";
