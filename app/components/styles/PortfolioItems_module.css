@@ -1,6 +1,3 @@
-.parent {
- 
-}
 
 .grid {
     display: grid;
@@ -9,6 +6,7 @@
     padding: 20px;
     place-items: center;
 }
+
 
 .portfolio-item {
     display: block;
@@ -32,4 +30,14 @@
     background-size: cover;
     background-position: center;
     cursor: pointer;
+}
+
+.lightbox-backdrop {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    transition: background-color 0.3 ease-in-out;
+}
+
+
+.lightbox-open .lightbox-content {
+    z-index: 10000;
 }

@@ -28,10 +28,7 @@ export default function Home() {
       <header className='hero'>
         <Hero />
       </header>
-   
       <Main />
-
-
       <Footer />
       </div>
     </>

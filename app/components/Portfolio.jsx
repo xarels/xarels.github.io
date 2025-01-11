@@ -7,12 +7,6 @@ export const MyWork = () => {
     <>
     <section id="portfolio" className="portfolio-section hidden">
         <h2>My Work</h2>
-        <div className="filter-buttons">
-            <button data-filter="all" className="active">All</button>
-            <button data-filter="branding">Branding</button>
-            <button data-filter="portrait">Portrait</button>
-            <button data-filter="poster">Poster</button>
-        </div>
           <PortfolioItems />
     </section>
     </>
