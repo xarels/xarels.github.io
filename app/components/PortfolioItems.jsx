@@ -3,8 +3,7 @@ import React from 'react';
 import "./styles/PortfolioItems_module.css"
 import imageData from "../data/imageData.json";
 import dynamic from 'next/dynamic';
-
-import '../../node_modules/glightbox/dist/css/glightbox.css'
+import 'glightbox/dist/css/glightbox.css'
 
 
 
@@ -27,14 +26,14 @@ function ImageCard ({ image, onClick}) {
 const PortfolioItems = () => {
     const GLightbox = dynamic(() => import('glightbox'), {ssr: false});
 
-React.useEffect (() => {
-    const lightbox = GLightbox({
-        selector: ".glightbox",
-        touchNavigation: true,
-        loop: true,
-    });
-    return () => lightbox.destroy;
-}, []);
+    React.useEffect (() => {
+        const lightbox = GLightbox({
+            selector: ".glightbox",
+            touchNavigation: true,
+            loop: true,
+        });
+        return () => lightbox.destroy;
+    }, []);
 
   return (
         <div id="portfolio-items" className="grid">
