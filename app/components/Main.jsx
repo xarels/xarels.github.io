@@ -1,5 +1,3 @@
-'use client';
-
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";

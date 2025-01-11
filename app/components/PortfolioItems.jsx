@@ -1,8 +1,8 @@
 import React from 'react';
 import "./styles/PortfolioItems_module.css"
 import imageData from "../data/imageData.json";
-import GLightbox from "glightbox";
-import "glightbox/dist/css/glightbox.min.css"
+import GLightbox from "@glightbox";
+import "@glightbox/dist/css/glightbox.min.css"
 
 
 
