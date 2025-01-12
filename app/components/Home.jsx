@@ -36,7 +36,9 @@ export const Home = () => {
         <Hero />
       </header>
       <Main />
+    <footer>
       <Footer />
+    </footer>
     </div>
   );
 };
