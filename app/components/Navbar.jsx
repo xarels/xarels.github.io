@@ -44,6 +44,7 @@ export const Navbar = () => {
           <li><a href="/" onClick={() => setMenuOpen(false)}>Home</a></li>
           <li><a href="#aboutMe" onClick={() => setMenuOpen(false)}>About Me</a></li>
           <li><a href="#portfolio" onClick={() => setMenuOpen(false)}>My Work</a></li>
+          <li><a href="#myExperience" onClick={() => setMenuOpen(false)}>My Experience</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact Me</a></li>
         </ul>
       </div>

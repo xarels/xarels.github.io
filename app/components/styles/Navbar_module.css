@@ -1,3 +1,4 @@
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -101,7 +102,7 @@ nav a:active {
     transition: color 0.3s ease;
 }
 
-.navbar-links {
+nav .navbar-links {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -110,12 +111,12 @@ nav a:active {
     transition: all 0.3s ease;
 }
 
-.navbar-links li {
+nav .navbar-links li {
     margin: 0.5rem 0;
     display: inline;
 }
 
-.navbar-links li{
+nav .navbar-links li{
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -123,7 +124,7 @@ nav a:active {
     transition: color 0.3s ease;
 }
 
-.navbar-links li:hover {
+nav .navbar-links li:hover {
     color: #ff6347; /* Tomato color */
 }
 
@@ -151,7 +152,7 @@ nav a:active {
         display: flex;
     }
 
-    .navbar-links {
+    nav .navbar-links {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -160,6 +161,7 @@ nav a:active {
         gap: 6px;
         right: 200px;
         width: 200px;
+        left: 30%;
         padding: 10px;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -167,13 +169,13 @@ nav a:active {
         opacity: 0;
     }
 
-   .navbar-links.show {
+    nav .navbar-links.show {
         display: flex;
         opacity: 1;
         transform: translateY(0);
     }
 
-    .navbar-links li {
+    nav .navbar-links li {
         margin: 0.5px 0;
     }
 

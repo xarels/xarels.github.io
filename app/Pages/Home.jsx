@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Hero from './Hero';
 import Main from './Main';
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 
 export const Home = () => {
 

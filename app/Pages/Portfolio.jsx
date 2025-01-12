@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import PortfolioItems from './PortfolioItems';
-import "./styles/Portfolio_module.css";
+import PortfolioItems from '../components/PortfolioItems';
+import "../components/styles/Portfolio_module.css";
 
 export const MyWork = () => {
   const [isVisible, setIsVisible] = useState(false);

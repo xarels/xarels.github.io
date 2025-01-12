@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import "./styles/Contact_module.css";
-import ContactForm from './ContactForm';
+import "../components/styles/Contact_module.css";
+import ContactForm from '../components/ContactForm';
 
 export const Contact = () => {
     const [isVisible, setIsVisible] = React.useState(false);

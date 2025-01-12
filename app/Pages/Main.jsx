@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import AboutMe from "./AboutMe";
-import SectionObserver from "./SectionObserver";
-import "./styles/Main_module.css";
+import MyExperience from "./MyExperience";
+import SectionObserver from "../components/SectionObserver";
+import "../components/styles/Main_module.css";
 
 export const Main = () => {
   
@@ -14,6 +15,7 @@ export const Main = () => {
       <Navbar />
       <AboutMe />
       <Portfolio />
+      <MyExperience />
       <Contact />
     </main>
   );

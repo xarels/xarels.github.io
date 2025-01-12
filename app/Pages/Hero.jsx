@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
-import Preloader from "./Preloader";
-import "./styles/Hero_module.css";
+import Preloader from "../components/Preloader";
+import "../components/styles/Hero_module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -44,6 +44,12 @@ export const Hero = () => {
                 onClick={() => document.getElementById("portfolio").scrollIntoView()}
               >
                 View My Work
+              </button>
+              <button
+                className="cta-button"
+                onClick={() => document.getElementById("myExperience").scrollIntoView()}
+              >
+                Current and Past Experience
               </button>
               <button
                 className="cta-button"

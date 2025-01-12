@@ -1,5 +1,5 @@
 import React from 'react'
-import "./styles/AboutMe_module.css"
+import "../components/styles/AboutMe_module.css"
 const AboutMe = () => {
     const [isVisible, setIsVisible] = React.useState(false);
 
