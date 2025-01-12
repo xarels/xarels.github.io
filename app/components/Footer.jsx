@@ -6,7 +6,7 @@ import "./styles/Footer_module.css";
 
 export const Footer = () => {
   return (
-<footer>
+<>
     <p>&copy; {new Date().getFullYear()} <span className="highlight">[Your Name]</span>. All rights reserved.</p>
     <div className="social-media">
         <a href="https://www.facebook.com/yourprofile" target="_blank"><FontAwesomeIcon icon= {faFacebookF}/></a>
@@ -14,7 +14,7 @@ export const Footer = () => {
         <a href="https://www.instagram.com/yourprofile" target="_blank"><FontAwesomeIcon icon= {faInstagram}/></a>
         <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><FontAwesomeIcon icon= {faLinkedinIn}/></a>
     </div>
-</footer>
+</>
   );
 };
 export default Footer;
