@@ -8,7 +8,9 @@
     display: grid;
     place-items: center;
     animation: backgroundShift 10s infinite alternate;
-    transition: transform 08s ease;;
+    transition: transform 08s ease;
+    marging-bottom: 0;
+    padding-bottom: 0;
 }
 
 .hero-content {
