@@ -29,17 +29,36 @@ const AboutMe = () => {
                     <li>Photo Manipulation</li>
                 </ul>
             </div>
-            <embed
-            src="/resume.pdf"
-            type="application/pdf"
-            width="100%"
-            height="800px"
-            style={{
-              border: '1px solid #ccc'
-            }}>
-            </embed>
-            </div>
+                  <div 
+                  className='pdf-container'
+                  style={{
+                    position: 'relative',
+                    paddingTop: '100%',
+                    overflow: 'hidden',
+                    border: '2px solid #ccc',
+                    borderRadius: '8px',
+                    margin: '16px',
+                    maxWidth: '100%',
+                  }}
+                >
+                <iframe
+                  src="/resume.pdf"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    border: 'none',
+                  }}
+                  title="Resume PDF"
+            ></iframe>
+          </div>
+          <p style={{ textAlign: 'center', marginTop: '12px' }}>
+            Unable to view the PDF? <a href="/resume.pdf" download>Download it here</a>.
+          </p>
         </div>
+      </div>
     </section>
   );
 };

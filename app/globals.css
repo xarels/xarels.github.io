@@ -22,7 +22,6 @@ body {
   margin: 0;
   padding: 0;
   color: #000000;
-  overflow-x: hidden;
 }
 
 html {
@@ -65,21 +64,6 @@ section {
 @supports (-webkit-touch-callout: none) {
   html, body {
       height: -webkit-fill-available;
-  }
-}
-
-/* Platform-specific scrollbar styles */
-@media not all and (min-resolution:.001dpcm) { 
-  @supports (-webkit-appearance:none) {
-      ::-webkit-scrollbar {
-          width: 8px;
-          background-color: var(--bg-color);
-      }
-      
-      ::-webkit-scrollbar-thumb {
-          background-color: var(--secondary-color);
-          border-radius: 4px;
-      }
   }
 }
 
