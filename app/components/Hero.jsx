@@ -24,7 +24,6 @@ export const Hero = () => {
   return (
     <>
       {!isLoaded && <Preloader onComplete={handlePreloaderComplete} />}
-
       {isLoaded && (
       <div className="hero">
         <div className="hero-content">
@@ -65,7 +64,6 @@ export const Hero = () => {
              <FontAwesomeIcon icon= {faChevronDown}/>
         </div> 
      </div>
-
       )}
     </>
   );
