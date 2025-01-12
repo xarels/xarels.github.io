@@ -8,14 +8,16 @@ import "jquery";
 
 const PortfolioItems = () => {
 
-    React.useEffect(() => {
-      if (typeof window !== "undefined") {
-        // Prevent right-click on lightbox images
-        document.addEventListener("contextmenu", (event) => {
-          if (event.target.classList.contains("lb-image")) {
-            event.preventDefault();
-          }
-        });
+React.useEffect(() => {
+  if (typeof window !== "undefined") {
+    // Prevent right-click on lightbox images
+    const contextMenuListener = (event) => {
+      if (event.target.classList.contains("lb-image")) {
+        event.preventDefault();
+      }
+    };
+    
+    document.addEventListener("contextmenu", contextMenuListener);
       // Dynamically import and configure Lightbox2
       import("lightbox2").then((Lightbox) => {
         Lightbox.option({
@@ -29,14 +31,10 @@ const PortfolioItems = () => {
       });
     }
     return () => {
-      document.removeEventListener("contextmenu", (event) => {
-        if (event.target.classList.contains("lb-image")) {
-          event.preventDefault();
-        }
-      });
+      document.removeEventListener("contextmenu", contextMenuListener);
     };
-    }, []);
-
+  }
+}, []);
 
   return (
     <div id="portfolio-items" className="grid" onContextMenu={(e) => e.preventDefault()}>
