@@ -27,7 +27,6 @@ export const Navbar = () => {
         <div className="logo">
           <img src="/logo.png" alt="Creative Workspace" className="logo-img" />
         </div>
-
         {/* Hamburger Menu Button */}
         <button
           className={`hamburger-menu ${menuOpen ? 'open' : ''}`}
@@ -40,7 +39,6 @@ export const Navbar = () => {
           <span className="line middle-line"></span>
           <span className="line bottom-line"></span>
         </button>
-
         {/* Navigation Links */}
         <ul className={`navbar-links ${menuOpen ? 'show' : ''}`}>
           <li><a href="/" onClick={() => setMenuOpen(false)}>Home</a></li>
