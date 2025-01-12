@@ -1,9 +1,10 @@
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import AboutMe from "./AboutMe";
 import SectionObserver from "./SectionObserver";
-import  "./styles/Main_module.css";
+import "./styles/Main_module.css";
 
 export const Main = () => {
   
@@ -16,5 +17,6 @@ export const Main = () => {
       <Contact />
     </main>
   );
-}
-export default Main
+};
+
+export default Main;

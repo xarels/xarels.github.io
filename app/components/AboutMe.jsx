@@ -1,12 +1,22 @@
 import React from 'react'
 import "./styles/AboutMe_module.css"
 const AboutMe = () => {
+    const [isVisible, setIsVisible] = React.useState(false);
+
+    React.useEffect(() => {
+      // Simulate initial visibility change or animation trigger after mounting
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 100); // Adjust delay as needed for animations
+      return () => clearTimeout(timer); // Cleanup timer on unmount
+    }, []);
+
   return (
     <>
-    <section id="aboutMe" className="about-section hidden">
+    <section id="aboutMe" className={`about-section ${isVisible ? 'visible' : 'hidden'}`}>
         <div className="about-content">
             <div className="about-image">
-             <img src="images/Hero/image.png" alt="[Your picture and Name]" loading="lazy" />
+             <img src="me.png" alt="[Your picture and Name]" loading="lazy" />
             </div>
             <div className="about-text">
             <h2>About Me</h2>
@@ -24,7 +34,7 @@ const AboutMe = () => {
         </div>
     </section>
     </>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

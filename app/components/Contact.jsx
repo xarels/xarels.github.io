@@ -5,9 +5,18 @@ import "./styles/Contact_module.css";
 import ContactForm from './ContactForm';
 
 export const Contact = () => {
+    const [isVisible, setIsVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    // Simulate initial visibility change or animation trigger after mounting
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // Adjust delay as needed for animations
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
 
   return (
-    <section id="contact" className="contact-section hidden">
+    <section id="contact" className={`contact-section ${isVisible ? 'visible' : 'hidden'}`}>
     <h2>Contact Me</h2>
     <div className="contact-grid">
 
@@ -23,6 +32,6 @@ export const Contact = () => {
 
     </div>
     </section>
-  )
-}
-export default Contact
+  );
+};
+export default Contact;

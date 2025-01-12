@@ -37,5 +37,5 @@ export default function Preloader ({onComplete})  {
 
         </motion.div>
     </motion.div>
-  )
-} 
+  );
+};

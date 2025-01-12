@@ -16,6 +16,6 @@ export const Footer = () => {
         <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><FontAwesomeIcon icon= {faLinkedinIn}/></a>
     </div>
 </footer>
-  )
-}
+  );
+};
 export default Footer;

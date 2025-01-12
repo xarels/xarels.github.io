@@ -7,28 +7,35 @@ import "lightbox2/dist/css/lightbox.min.css";
 import "jquery";
 
 const PortfolioItems = () => {
+
     React.useEffect(() => {
-        if (typeof window !== "undefined") {
-
+      if (typeof window !== "undefined") {
+        // Prevent right-click on lightbox images
         document.addEventListener("contextmenu", (event) => {
-            if (event.target.classList.contains("lb-image")) {
-                event.preventDefault();
-            }
-         });
-
-          const lightbox = require("lightbox2");
-    
-          // Lightbox2 Configuration
-          lightbox.option({
-            resizeDuration: 200, // Transition speed in ms
-            wrapAround: true,    // Enables infinite looping for images
-            fadeDuration: 300,   // Fade effect duration
-            imageFadeDuration: 300,
-            showImageNumberLabel: true, // Show "Image X of Y" label
-            disableScrolling: true,     // Prevent scrolling while lightbox is open
-          });
+          if (event.target.classList.contains("lb-image")) {
+            event.preventDefault();
+          }
+        });
+      // Dynamically import and configure Lightbox2
+      import("lightbox2").then((Lightbox) => {
+        Lightbox.option({
+          resizeDuration: 200, // Transition speed in ms
+          wrapAround: true,    // Enables infinite looping for images
+          fadeDuration: 300,   // Fade effect duration
+          imageFadeDuration: 300,
+          showImageNumberLabel: true, // Show "Image X of Y" label
+          disableScrolling: true,     // Prevent scrolling while lightbox is open
+        });
+      });
+    }
+    return () => {
+      document.removeEventListener("contextmenu", (event) => {
+        if (event.target.classList.contains("lb-image")) {
+          event.preventDefault();
         }
-      }, []);
+      });
+    };
+    }, []);
 
 
   return (
