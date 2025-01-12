@@ -6,7 +6,6 @@ import "./styles/Footer_module.css";
 
 export const Footer = () => {
   return (
-
 <footer>
     <p>&copy; {new Date().getFullYear()} <span className="highlight">[Your Name]</span>. All rights reserved.</p>
     <div className="social-media">
