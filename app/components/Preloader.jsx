@@ -23,7 +23,6 @@ export default function Preloader ({onComplete})  {
     animate={{ opacity: isAnimating ? 1 : 0 }}
     exit={{ opacity: 1 }}
     transition={{ duration: 0.5 }}>
-        
         <motion.div
         className="loader"
         initial={{ scale: 0 }}
@@ -34,7 +33,6 @@ export default function Preloader ({onComplete})  {
             ease: "easeInOut"
         }}
         >
-
         </motion.div>
     </motion.div>
   );
