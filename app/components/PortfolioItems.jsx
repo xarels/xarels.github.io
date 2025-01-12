@@ -51,12 +51,10 @@ const PortfolioItems = () => {
             onContextMenu={(e) => e.preventDefault()}
             >
             <img src={image.src} alt={image.title} draggable="false" loading='lazy' className='image-container' onContextMenu={(e) => e.preventDefault()} />
-
             </a>
             <h2>{image.title}</h2>
             <p>{image.description}</p>
         </div>
- 
       ))}
     </div>
   );
