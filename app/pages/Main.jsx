@@ -15,7 +15,6 @@ export const Main = () => {
       <Navbar />
       <AboutMe />
       <Portfolio />
-      <MyExperience />
       <Contact />
     </main>
   );
