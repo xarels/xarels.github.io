@@ -22,10 +22,9 @@ export const Hero = () => {
   }, []);
 
   return (
-    <>
+<div className="hero">
       {!isLoaded && <Preloader onComplete={handlePreloaderComplete} />}
       {isLoaded && (
-      <div className="hero">
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="title">Creative Vision, Exceptional Design</h1>
@@ -62,10 +61,9 @@ export const Hero = () => {
        <div className="scroll-indicator">
               <span className="scroll-text">Scroll Down</span>
              <FontAwesomeIcon icon= {faChevronDown}/>
-        </div> 
-     </div>
+        </div>
       )}
-    </>
+  </div>
   );
 };
 
