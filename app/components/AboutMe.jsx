@@ -35,7 +35,10 @@ const AboutMe = () => {
             src="/resume.pdf"
             type="application/pdf"
             width="100%"
-            height="800px">
+            height="800px"
+            style={{
+              border: '1px solid #ccc'
+            }}>
             </embed>
             </div>
         </div>
