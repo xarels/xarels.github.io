@@ -18,6 +18,7 @@ const AboutMe = () => {
             <div className="about-image">
              <img src="me.png" alt="[Your picture and Name]" loading="lazy" />
             </div>
+            
             <div className="about-text">
             <h2>About Me</h2>
             <p>Creative graphic designer with 5+ years of experience in digital and print design.</p>
@@ -30,6 +31,12 @@ const AboutMe = () => {
                     <li>Photo Manipulation</li>
                 </ul>
             </div>
+            <embed
+            src="/resume.pdf"
+            type="application/pdf"
+            width="100%"
+            height="800px">
+            </embed>
             </div>
         </div>
     </section>
