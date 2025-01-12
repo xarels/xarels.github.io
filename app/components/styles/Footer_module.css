@@ -16,6 +16,12 @@ footer .fab.fa-twitter::before{
 	font-size:1.2em;
 }
 
+.container {
+  margin-top: 1px;
+  padding-top: 1px;
+}
+
+
 .highlight {
     color:  tomato; /* Tomato */
     font-weight: bold;
