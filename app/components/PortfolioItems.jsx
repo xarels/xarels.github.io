@@ -16,20 +16,20 @@ React.useEffect(() => {
         event.preventDefault();
       }
     };
-    
     document.addEventListener("contextmenu", contextMenuListener);
-      // Dynamically import and configure Lightbox2
-      import("lightbox2").then((Lightbox) => {
-        Lightbox.option({
-          resizeDuration: 200, // Transition speed in ms
-          wrapAround: true,    // Enables infinite looping for images
-          fadeDuration: 300,   // Fade effect duration
-          imageFadeDuration: 300,
-          showImageNumberLabel: true, // Show "Image X of Y" label
-          disableScrolling: true,     // Prevent scrolling while lightbox is open
-        });
+
+    // Dynamically import and configure Lightbox2
+    import("lightbox2").then((Lightbox) => {
+      Lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+        fadeDuration: 300,
+        imageFadeDuration: 300,
+        showImageNumberLabel: true,
+        disableScrolling: true,
       });
-    }
+    });
+
     return () => {
       document.removeEventListener("contextmenu", contextMenuListener);
     };
