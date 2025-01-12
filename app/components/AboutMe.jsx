@@ -12,13 +12,11 @@ const AboutMe = () => {
     }, []);
 
   return (
-    <>
     <section id="aboutMe" className={`about-section ${isVisible ? 'visible' : 'hidden'}`}>
         <div className="about-content">
             <div className="about-image">
              <img src="me.png" alt="[Your picture and Name]" loading="lazy" />
             </div>
-            
             <div className="about-text">
             <h2>About Me</h2>
             <p>Creative graphic designer with 5+ years of experience in digital and print design.</p>
@@ -43,7 +41,6 @@ const AboutMe = () => {
             </div>
         </div>
     </section>
-    </>
   );
 };
 
