@@ -30,13 +30,15 @@ export const Navbar = () => {
 
         {/* Hamburger Menu Button */}
         <button
-          className="hamburger-menu"
+          className={`hamburger-menu ${menuOpen ? 'open' : ''}`}
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
         >
-          {/* Accessible menu toggle indicator */}
-          <span className="hamburger-icon">...</span>
+          {/* Animated Hamburger */}
+          <span className="line top-line"></span>
+          <span className="line middle-line"></span>
+          <span className="line bottom-line"></span>
         </button>
 
         {/* Navigation Links */}
