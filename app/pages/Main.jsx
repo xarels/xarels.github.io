@@ -10,14 +10,14 @@ import "../components/styles/Main_module.css";
 export const Main = () => {
   
   return (
-    <main className="main-content hidden">    
+    <>    
     <SectionObserver />
       <Navbar />
       <AboutMe />
       <Portfolio />
       <MyExperience />
       <Contact />
-    </main>
+    </>
   );
 };
 
