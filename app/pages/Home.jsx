@@ -24,6 +24,7 @@ export const Home = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   // Ensure rendering only after mounting
   if (!hasMounted) {
@@ -31,7 +32,8 @@ export const Home = () => {
   }
 
   return (
-    <div className={scrolled ? 'scrolled' : 'notScrolled'}>
+    <div 
+    className={scrolled ? 'scrolled' : 'notScrolled'} style={{  background: "linear-gradient(95deg, #000, #333)"}}>
       <header >
         <Hero />
       </header>

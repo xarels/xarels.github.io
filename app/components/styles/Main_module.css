@@ -1,12 +1,13 @@
 .main-content {
-    padding: 80px 20px;
-    margin: 20px 0;
-    background-color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(88deg, #000, #333);
     animation: fadeIn 1s ease-in-out;
-    margin-top: 2px;
-    padding-top: 2px;
-    margin-bottom: 1px;
+    padding-top: 1px;
     padding-bottom: 1px;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
 }

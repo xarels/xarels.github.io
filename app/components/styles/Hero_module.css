@@ -7,9 +7,8 @@
     overflow: hidden;
     display: grid;
     place-items: center;
-    animation: backgroundShift 10s infinite alternate;
+    /*animation: backgroundShift 10s infinite alternate;*/
     transition: transform 08s ease;
-    marging-bottom: 0;
     padding-bottom: 0;
 }
 
@@ -21,12 +20,14 @@
     color: white;
     overflow: hidden;
     position: relative;
-    animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+
 }
 
 
-  /* Hero Image Container */
-  .hero-visual {
+
+/* Hero Image Container */
+.hero-visual {
     position: relative;
     width: 80%;
     max-height: 62vh;
@@ -44,8 +45,8 @@
     object-fit: cover;
     justify-content: center;
     transform: scale(1.02);
-    transition: transform 0.8s ease-in-out;
     filter: brightness(0.9);
+
 }
   
 /* Image Overlay */
@@ -76,12 +77,6 @@
     animation: float 6s ease-in-out infinite;
 }
 
-/* Hover Effects */
-.hero-img:hover {
-    transform: scale(1.05);
-}
-  
-
 .shape-2 {
     bottom: -30px;
     left: -30px;
@@ -92,7 +87,6 @@
    font-size: clamp(2.5rem, 5vw, 4rem);
    line-height: 1.2;
    margin-bottom: 1.5rem;
-   animation: fadeIn 2s ease-in-out;
    animation: textGlow 2s infinite alternate;
 
    
@@ -102,7 +96,7 @@
     font-size: clamp(1rem, 2vw, 1.25rem);
     color:  #ffffff; 
     margin-bottom: 2rem;
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeInUp 3s ease-in-out;
 }
 
 .highlight {
@@ -154,7 +148,7 @@
     letter-spacing: 1px;
 }
 
-.scroll-indicator .fa-chevron-down {
+.fa-chevron-down {
     font-size: 1rem;
 }
 
@@ -177,6 +171,11 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @keyframes buttonBounce {
     0%, 100% {
         transform: translateY(0);
@@ -185,6 +184,17 @@
         transform: translateY(-10px);
     }
 }
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
 
 @keyframes backgroundShift {
     0% {
