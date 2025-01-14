@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Preloader from "../components/Preloader";
-import "../components/styles/Hero_module.css";
+import "../styles/Hero_module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 

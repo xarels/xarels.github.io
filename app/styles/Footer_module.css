@@ -8,14 +8,7 @@ footer {
     /*bottom: 0;*/
 }
 
-footer .fab.fa-twitter{
-	font-family:sans-serif;
-}
-footer .fab.fa-twitter::before{
-	content:"𝕏";
-	font-size:1.2em;
-    margin-top: 20px;
-}
+
 
 .highlight {
     color:  tomato; /* Tomato */
@@ -30,13 +23,14 @@ footer p {
 footer .social-media {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    align-items: center;
+    gap: 18px;
+    margin-top: 15px;
 }
 
 footer .social-media a {
     color: white;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 1.5em;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -44,4 +38,12 @@ footer .social-media a {
 footer .social-media a:hover {
     color: tomato; /* Tomato color */
     transform: translateY(-3px);
+}
+
+footer .fab.fa-twitter{
+	font-family:sans-serif;
+}
+footer .fab.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
 }

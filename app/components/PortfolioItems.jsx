@@ -1,5 +1,5 @@
 import React from 'react';
-import "./styles/PortfolioItems_module.css";
+import "../styles/PortfolioItems_module.css";
 import imageData from "../data/imageData.json";
 import dynamic from "next/dynamic"
 const Lightbox2 = dynamic(() => import("lightbox2"), { ssr: false });

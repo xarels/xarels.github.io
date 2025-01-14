@@ -1,18 +1,9 @@
-import React from 'react'
-import "../components/styles/AboutMe_module.css"
-const AboutMe = () => {
-    const [isVisible, setIsVisible] = React.useState(false);
 
-    React.useEffect(() => {
-      // Simulate initial visibility change or animation trigger after mounting
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 100); // Adjust delay as needed for animations
-      return () => clearTimeout(timer); // Cleanup timer on unmount
-    }, []);
+import "../styles/AboutMe_module.css"
+const AboutMe = () => {
 
   return (
-    <section id="aboutMe" className={`about-section ${isVisible ? 'visible' : 'hidden'}`}>
+    <>  
         <div className="about-content">
             <div className="about-image">
              <img src="me.png" alt="[Your picture and Name]" loading="lazy" />
@@ -59,7 +50,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

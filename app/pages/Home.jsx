@@ -1,23 +1,40 @@
 'use client';
-import React, { useEffect, useState } from 'react';
 import Hero from './Hero';
-import Main from './Main';
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
+import AboutMe from "./AboutMe";
+import MyExperience from "./MyExperience";
 import Footer from "../components/Footer";
-import SectionObserver from "../components/SectionObserver";
+import Navbar from "../components/Navbar";
+import "../styles/Main_module.css";
+
 
 export const Home = () => {
-  
+
+
   return (
     <>
       <header >
         <Hero />
       </header>
+      <Navbar />
       <main>    
-      <Main />
+        <section id="aboutMe" className='about-section'>
+          <AboutMe />
+        </section>
+        <section id="portfolio" className='portfolio-section'>
+          <Portfolio />
+        </section>
+        <section id="myExperience" className='myExperience'>
+          <MyExperience />
+        </section>
+        <section id="contact" className='contact-section'>
+          <Contact />
+        </section>
       </main>
-    <footer>
-      <Footer />
-    </footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

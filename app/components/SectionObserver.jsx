@@ -21,20 +21,12 @@ const SectionObserver = () => {
         });
       }, observerOptions);
 
-      main.forEach((main) => {
-        observer.observe(main);
-      });
-
       sections.forEach((section) => {
         observer.observe(section);
       });
 
       // Cleanup observer when the component is unmounted
       return () => {
-        main.forEach((main) => {
-          observer.unobserve(main);
-        });
-
         sections.forEach((section) => {
           observer.unobserve(section);
         });

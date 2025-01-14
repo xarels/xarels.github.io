@@ -1,10 +1,9 @@
-/* components/PortfolioPreview.module.css */
-.portfolioSection {
-    padding: 2rem 5%;
-    background-color: #f9f9f9;
-  }
-  
-  .sectionTitle {
+/* components/PortfolioPreview.module.css */  
+.myExperience {
+  padding: 80px 20px;
+  background: #fff;
+}  
+.sectionTitle {
     font-size: 2rem;
     font-weight: 700;
     color: #333;

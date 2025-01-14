@@ -1,28 +1,16 @@
-// In MyExperience.js or portfolio component
-'use client';
-import React from 'react';
 import { useRouter } from 'next/navigation';
 import posts from '../data/postData.json'; // Adjust path if needed
-import "../components/styles/MyExperience_module.css";
+import "../styles/MyExperience_module.css";
 
 export const MyExperience = () => {
-  const [isVisible, setIsVisible] = React.useState(false);
   const router = useRouter();
 
-  React.useEffect(() => {
-    // Simulate initial visibility change or animation trigger after mounting
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 100); // Adjust delay as needed for animations
-    return () => clearTimeout(timer); // Cleanup timer on unmount
-  }, []);
-
-const handleClick = (id) => {
-  router.push(`/posts/${id}`);
-}
+  const handleClick = (id) => {
+    router.push(`/posts/${id}`);
+  }
 
   return (
-    <section id="myExperience" className={`portfolioSection ${isVisible ? 'visible' : 'hidden'}`}>
+    <>
       <h2 className="sectionTitle">Latest Projects</h2>
       <div className="grid">
         {posts.map((post) => (
@@ -43,7 +31,7 @@ const handleClick = (id) => {
           </div>
         ))}
       </div>
-    </section>
+    </>
   );
 };
 
